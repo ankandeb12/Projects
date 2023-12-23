@@ -1,0 +1,18 @@
+This project involves a detailed comparison of four deep learning-based sentiment analysis algorithms - Transformers, VADER, CNN-LSTM, and HAN, utilizing the popular Sentiment140 dataset. In addition to evaluating accuracy, Natural Language Processing (NLP) techniques were employed to remove stopwords, enhancing the overall performance of the models.
+
+Dataset:
+The Sentiment140 dataset, a collection of tweets labeled with positive and negative sentiments, serves as the foundation for this analysis. The dataset was preprocessed to clean and tokenize the text, and NLP techniques were applied to remove stopwords, reducing noise and improving the quality of the data.
+
+Algorithms Studied:
+
+Transformers:
+Utilizing cutting-edge transformer architectures such as BERT and GPT for contextual understanding.
+
+VADER:
+A rule-based sentiment analysis tool employing a predefined lexicon and grammar rules for sentiment scoring.
+
+CNN-LSTM:
+A combination of Convolutional Neural Networks (CNNs) and Long Short-Term Memory (LSTM) networks, designed for sequential data analysis.
+
+HAN (Hierarchical Attention Network):
+A model incorporating hierarchical attention mechanisms to capture contextual information at both the word and sentence levels.

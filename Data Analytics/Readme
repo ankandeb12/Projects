@@ -6,7 +6,7 @@ Explored the application of linear regression models to predict outcomes based o
 Implemented various regression techniques, including simple linear regression and multiple linear regression, to uncover relationships within datasets.
 
 Statistical Tests:
-Conducted Z-tests, P-tests, and ANOVA tests to evaluate hypotheses and assess the statistical significance of observed differences.
+Conducted Z-tests, T-tests, and ANOVA tests to evaluate hypotheses and assess the statistical significance of observed differences.
 Leveraged statistical tests to make informed decisions and draw meaningful conclusions from data.
 
 Average Methods and Trend Line Fitting:

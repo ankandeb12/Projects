@@ -1,0 +1,204 @@
+<html>
+<head>
+
+
+<style>
+body {
+  font-family: Arial;
+  font-size: 17px;
+  padding: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; 
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; 
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%;
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+}
+</style>
+<script>
+function validate(){
+var n=document.getElementByID("fname").value;
+var patt_fname=/^[A-Za-z]+\s[A-Za-z]+$/;
+if(n==""){
+alert("Name is not entered");
+}
+else{
+if(patt_fname.test(n))
+{
+alert("Data submitted");
+}
+else{
+alert("Not in format");
+}
+}
+}
+</script>
+</head>
+<body>
+
+<h2>ORDER ONLINE</h2>
+
+<div class="row">
+<div class="col-75">
+<div class="container">
+<form name="form1" onsubmit="validate()" action="/action_page.php">
+
+<div class="row">
+<div class="col-50">
+<h3>Billing Address</h3>
+<label for="fname"><i class="fa fa-user"></i> Full Name (Name Surname)</label>
+<input type="text" id="fname" name="firstname" placeholder="Full Name" pattern="^([A-Z][a-z]*((\s[A-Za-z])?[a-z]*)*)$" required>
+<label for="email"><i class="fa fa-envelope"></i> Email (Use proper format)</label>
+<input type="text" id="email" name="email" placeholder="Email" pattern="^([A-za-z0-9\.-]+)@([A-za-z0-9-]+).([a-z]{2,3})$" required>
+<label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+<input type="text" id="adr" name="address" placeholder="Address" required>
+<label for="city"><i class="fa fa-institution"></i> City (Eg. nagpur)</label>
+<input type="text" id="city" name="city" placeholder="City" pattern="^[A-Za-z]+" required>
+
+<div class="row">
+<div class="col-50">
+<label for="state">State (Eg. maharashtra)</label>
+<input type="text" id="State" name="state" placeholder="State" pattern="^[A-Za-z]+" required>
+</div>
+<div class="col-50">
+<label for="zip">Pin (6 digits) </label>
+<input type="text" id="zip" name="zip" placeholder="Pin" pattern="[0-9]{6}" min="6" maxlength="6" required>
+</div>
+</div>
+</div>
+
+<div class="col-50">
+<h3>Payment</h3>
+
+<div class="icon-container">
+
+</div>
+<label for="cname">Name on Card (Name Surname)</label>
+<input type="text" id="cname" name="cardname" placeholder="Name on Card" pattern="^([A-Z][a-z]*((\s[A-Za-z])?[a-z]*)*)$" required>
+<label for="ccnum">Credit card number (16 Digits)</label>
+<input type="text" id="ccnum" name="cardnumber" placeholder="Credit card number" pattern="[0-9]{16}" min="16" maxlength="16" required>
+<label for="expmonth">Exp Month (Eg. november)</label>
+<input type="text" id="expmonth" name="expmonth" placeholder="Exp Month" pattern="^[A-Za-z]+" required>
+<div class="row">
+<div class="col-50">
+<label for="expyear">Exp Year (4 Digits)</label>
+<input type="text" id="expyear" name="expyear" placeholder="Exp Year" pattern="[0-9]{4}" min="4" maxlength="4" required>
+</div>
+<div class="col-50">
+<label for="cvv">CVV (3 Digits)</label>
+<input type="text" id="cvv" name="cvv" placeholder="CVV" pattern="[0-9]{3}" min="3" maxlength="3" required>
+</div>
+<div class="col-50">
+<label for="Customerid">Customer-ID (8 Alphanumeric)</label>
+<input type="text" id="ig" name="ig" placeholder="ig" value="CUSTID-" pattern="^[a-Z]+[0-9]$"  min="15" maxlength="15" required>
+</div>
+</div>
+</div>
+          
+</div>
+<label>
+<input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+</label>
+<input class="button" type="submit" value="Continue to checkout">
+</form>
+</div>
+</div>
+<div class="col-25">
+<div class="container">
+<h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>5</b></span></h4>
+<p><a href="#">Product 1</a> <span class="price">Rs 349</span></p>
+<p><a href="#">Product 2</a> <span class="price">Rs 249</span></p>
+<p><a href="#">Product 3</a> <span class="price">Rs 389</span></p>
+<p><a href="#">Product 4</a> <span class="price">Rs 499</span></p>
+<p><a href="#">Product 5</a> <span class="price">Rs 399</span></p>
+<hr>
+<p>Total <span class="price" style="color:black"><b>Rs 1885</b></span></p>
+</div>
+</div>
+</div>
+
+</body>
+</html>

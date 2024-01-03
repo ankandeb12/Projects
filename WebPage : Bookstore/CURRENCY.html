@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+input[type="button"]{
+border-radius:8px;
+border-color:#3446eb;
+color:#080808;
+width:100%;
+}
+input[type="reset"]{
+border-radius:8px;
+border-color:#3446eb;
+color:#080808;
+width:100%;
+}
+div {
+background-color: #873fd9;
+width: 400px;
+padding: 10px;
+border: 3px solid gray;
+}
+input[type="text"]{
+border-radius:8px;
+border-color:#3446eb;
+color:#080808;
+}
+</style>
+<script>
+function RupeeConverter(){
+document.converter.dollar.value = document.converter.Rupee.value * 0.0134
+document.converter.pound.value = document.converter.Rupee.value * 0.00976
+document.converter.Euro.value = document.converter.Rupee.value * 0.011
+document.converter.yen.value = document.converter.Rupee.value * 1.470588
+}
+function dollarConverter(){
+document.converter.Rupee.value = document.converter.dollar.value * 74.1
+document.converter.pound.value = document.converter.dollar.value * 0.724637
+document.converter.Euro.value = document.converter.dollar.value * 0.83333
+document.converter.yen.value = document.converter.dollar.value * 108.69565
+}
+function poundConverter(){
+document.converter.dollar.value = document.converter.pound.value * 1.388888
+document.converter.Rupee.value = document.converter.pound.value * 101.1245045
+document.converter.Euro.value = document.converter.pound.value * 1.149425
+document.converter.yen.value = document.converter.pound.value * 151.515151
+}
+function EuroConverter(){
+document.converter.dollar.value = document.converter.Euro.value * 1.20481
+document.converter.pound.value = document.converter.Euro.value * 0.869565
+document.converter.Rupee.value = document.converter.Euro.value * 90.0009
+document.converter.yen.value = document.converter.Euro.value * 131.578947
+}
+function yenConverter(){
+document.converter.Rupee.value = document.converter.yen.value * 1.47
+document.converter.dollar.value = document.converter.yen.value * 112.35
+document.converter.pound.value = document.converter.yen.value * 230.414
+document.converter.Euro.value = document.converter.yen.value * 165.298
+}
+</script>
+
+</head>
+
+<body background="la.jpg">
+<center>
+<BR><BR>
+<div>
+<H1 style="color:white"> CURRENCY CONVERTER </h1>
+</div>
+<br>
+<form name="converter">
+<div>
+<table border="0">
+<tr>
+<td style="color:white">RUPEES: </td>
+<td>
+<input type="text" name="Rupee" onChange="RupeeConverter()" />
+</td>
+<td><img src="ind.jpg"></td>
+</tr>
+<tr>
+<td style="color:white">US DOLLARS: </td>
+<td>
+<input type="text" name="dollar" onChange="dollarConverter()" />
+</td>
+<td><img src="us.jpg"></td>
+</tr>
+<tr>
+<td style="color:white">POUNDS:</td>
+<td>
+<input type="text" name="pound" onChange="poundConverter()" />
+</td>
+<td><img src="brt.jpg"></td>
+</tr>
+<tr>
+<td style="color:white">EUROS: </td>
+<td>
+<input type="text" name="Euro" onChange="EuroConverter()" />
+</td>
+<td><img src="eu.jpg"></td>
+</tr>
+<tr>
+<td style="color:white">JAPANESE YEN: </td>
+<td>
+<input type="text" name="yen" onChange="yenConverter()" />
+</td>
+<td><img src="jp.jpg"></td>
+</tr>
+<tr>
+<td colspan="2" align="center">
+<input type="button" value="Convert" />
+</td>
+<td >
+<input type="reset" value="Reset">
+</td>
+</tr>
+</table>
+</div>
+</form>
+</center>
+</body>
+</html>

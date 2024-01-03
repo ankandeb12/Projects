@@ -1,0 +1,127 @@
+<html>  
+
+<head>  
+  <title> Form </title>
+<style>  
+body{  
+  font-family: Calibri, Helvetica, sans-serif;  
+   
+}  
+.container {  
+    padding: 50px;  
+  background-color: lightblue;  
+}  
+  
+input[type=text], input[type=password], textarea {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+
+ 
+}  
+  
+ div {  
+            padding: 10px 0;  
+         }  
+hr {  
+  border: 3px solid #DC143C;  
+  margin-bottom: 25px;  
+}  
+.registerbtn {  
+  background-color: #4CAF50;  
+  color: white;  
+  padding: 16px 20px;      
+  width: 49%;  
+   
+}  
+.resetbtn {  
+  background-color: #DC143C;  
+  color: white;  
+  padding: 16px 20px;      
+  width: 49%;  
+   
+}  
+
+</style>  
+</head>  
+<body background="yy.jpg">  
+
+<form>  
+   <center>  <h1> </h1> </center> 
+  <center>  <h1>  REGISTRATION FOR BOOK STORE</h1> </center> 
+
+<h2 align="center"> ALREADY A MEMBER ? CLICK <a href="login.html">HERE</a> TO LOG IN </h2>  
+  <hr>  
+  <label> <b>Firstname :</b></label>   
+<input type="text" placeholder="Firstname" name="firstname"  size="15" required >   
+<label><b> Middlename :</b> </label>   
+<input type="text" placeholder="Middlename" name="middlename"  size="15" required >   
+<label><b> Lastname :</b> </label>    
+<input type="text" placeholder="Lastname" name="lastname" size="15"required >   
+<div>  
+<label>   
+<b>Your Favourite genre :</b>  
+</label>   
+  
+<select>  
+<option value="gen">Genres</option>  
+<option value="sci">Science Fictions</option>  
+<option value="bst">Best Sellers</option>  
+<option value="Bio">Biographies</option>  
+<option value="det">Detective books</option>  
+<option value="sus">Suspense & Thrillers</option>  
+<option value="hrr">Horror</option>  
+</select>  
+</div>  
+<div>  
+<label>   
+<b>Gender :</b>  
+</label><br>  
+<input type="radio" value="Male" name="gender" checked > Male   
+<input type="radio" value="Female" name="gender"> Female   
+<input type="radio" value="Other" name="gender"> Other  
+<br><br>
+
+
+<b>Date Of Birth : </b>
+<input type="date" step="7" min="1880-01-06" max="2021-12-31">
+ <br><br>
+<b> Nationality :</b> <br>
+ <input type="checkbox" id="ind" name="ind" value="ind">
+  <label for="ind"> Indian</label><br>
+  <input type="checkbox" id="oth" name="oth" value="oth">
+  <label for="oth"> Other</label><br><br>
+  
+
+  
+</div>  
+<label>   
+<b> Mobile :</b> 
+</label>  
+<input type="text" name="country code" placeholder="Country Code"  value="+91" >   
+<b>Phone :</b>
+<input type="text"  name="phone" placeholder="phone no."  required>   
+<b>Current Address :</b>  
+<textarea cols="80" rows="5" placeholder="Current Address" value="address" required>  
+</textarea>  
+ <label for="email"><b>Email :</b></label>  
+ <input type="text" placeholder="Enter Email" name="email" required>  
+ <b> Upload Document :</b> <br><br>
+  <input type="file" id="myFile" name="filename" >
+ 
+  <br><br>
+  
+    <label for="psw"><b>Password :</b></label>  
+    <input type="password" placeholder="Enter Password" name="psw" required>  
+  
+    <label for="psw-repeat"><b>Re-type Password :</b></label>  
+    <input type="password" placeholder="Retype Password" name="psw-repeat" required>  
+	Hereby I declare that I have read all the terms and conditions and I agree all of them. (click the agree checkbox to proceed)<br>
+	<input type="checkbox" id="agg" name="agg" value="aggr">
+  <label for="agg"> Agree</label><br><br><br>
+    <button type="submit" class="registerbtn">Register</button> 
+<button type="submit" class="resetbtn">Reset</button>	
+</form>  
+</body>  
+</html>  

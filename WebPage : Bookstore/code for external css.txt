@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>external</title>
+<link rel="stylesheet" href = "self.css">
+</head>
+<body background="b12.jpg">
+<h1> About the Developer</h1>
+<p>
+
+Well, I guess you are interested to know about the developer well I ( The Developer ) is writing this part.<br>
+ My name is Ankan Deb and I am 19 years old.<br>
+ <img src="self.jpeg" width="100" > <br>
+I am an undergraduate student who is doing Bachelors in Engineering from Shri Ramdeobaba College of Engineering and Management. <br>
+Well I created this for some of the reading enthusiasts like you, well I mostly like mysteries and science fictions related stuff so mostly you will find that here and also i have created 
+section to choose diferent genres for those of you who have different taste in topics.<br>
+Also this is just a testing web page created by a student so all of the links will lead to Amazon web page where you can buy them, and also this is a project work which was guided by Mr. Samir Ajani 
+who is my professor who teaches me web designing.<br>
+
+</body>
+</html>

@@ -1,0 +1,3 @@
+Developed a speech recognition model using ‘speech_recognition’ library in python.
+Contains 2 functions ‘recognize_from_audio_file(audio_file_path)’ which recognizes speech from an audio file and another function named ‘recognize_from_microphone()’ which recognizes 
+speech from the computer's microphone.

@@ -1,0 +1,4 @@
+I have provided both the ipynb and py files, better to run on ipynb as it is more detailed.
+To run the code make sure that all the files are in same folder or the same instance if in jupyter notebook, make sure all the 'blackassign0001' to 'blackassign0100' text files and the code files are in the same folder that is, move all the data from 'Extracted text files' to the same folder as the codes are in.
+the input.xlsx file is coverted to input.csv and all the stopword and positive-negative text files are converted into UTF-8 encoded format, so use the same one that I have provided.
+the output is stored in the 'Output Data Structure.xlsx' file.
